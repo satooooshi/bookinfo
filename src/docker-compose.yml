@@ -4,6 +4,8 @@ services:
     environment:
       - REDIS_DB_HOST=127.0.0.1
       - REDIS_DB_PORT=6379
+      - SERVICE_VERSION=v2
+      - DB_TYPE=redis
     build:
       context: ./ratings
     image: superheatedboy/ratings-redis:latest
