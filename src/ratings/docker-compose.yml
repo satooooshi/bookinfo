@@ -1,0 +1,17 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    ports:
+      - 27017:27017
+  redis:
+    image: 'redis'
+    restart: always
+    ports:
+      - '6379:6379'
+
+# https://qiita.com/tktcorporation/items/5a739a9bc56b438c6425
