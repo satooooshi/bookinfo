@@ -131,6 +131,10 @@ spec:
         - containerPort: 9080
         securityContext:
           runAsUser: 1000
+        env:
+        - name: NODE_OPTIONS
+          value: '--openssl-legacy-provider'
+        command: ["npm", "start", "9080"]
 ---
 ##################################################################################################
 # Reviews service
