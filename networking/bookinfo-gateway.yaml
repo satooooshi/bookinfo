@@ -39,3 +39,11 @@ spec:
         host: productpage
         port:
           number: 9080
+  - match:
+    - uri:
+        prefix: /ratings
+    route:
+    - destination:
+        host: ratings
+        port:
+          number: 9080
