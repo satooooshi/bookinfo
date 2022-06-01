@@ -1,0 +1,13 @@
+version: "3"
+services:
+  ratings:
+    environment:
+      - REDIS_DB_HOST=127.0.0.1
+      - REDIS_DB_PORT=6379
+    build:
+      context: ./ratings
+    image: superheatedboy/ratings-redis:latest
+    ports:
+      - "9080:9080"
+
+# https://qiita.com/tktcorporation/items/5a739a9bc56b438c6425

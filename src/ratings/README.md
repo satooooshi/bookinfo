@@ -30,3 +30,10 @@ https://www.sejuku.net/blog/83938
 https://medium.com/geekculture/using-redis-with-docker-and-nodejs-express-71dccd495fd3
 redis-cli
 ping
+
+
+bookinfo deployment
+https://istio.io/latest/docs/examples/bookinfo/
+/Users/satoshiaikawa/Downloads/istio-master/samples/bookinfo/platform/kube/bookinfo.yaml
+/Users/satoshiaikawa/Downloads/istio-master/samples/bookinfo/networking/bookinfo-gateway.yaml
+/Users/satoshiaikawa/Downloads/istio-master/samples/bookinfo/networking/destination-rule-all.yaml
